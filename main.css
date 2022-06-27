@@ -1,0 +1,135 @@
+@font-face {
+  font-family: "Atyp Display SemiBold";
+  src: url("./AtypDisplay-Semibold.ttf");
+}
+
+*,
+*:after,
+*:before {
+  outline: none;
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  color: #fff;
+  overflow-x: hidden !important;
+  font-family: "Trebuchet MS";
+  font-size: 1em;
+  background: rgb(22, 22, 22);
+}
+h1,
+h2 {
+  color: #fff;
+  font-weight: 100;
+  font-family: "Atyp Display SemiBold";
+}
+h2 {
+  font-size: 50px;
+}
+.mainheading {
+  font-size: 50px;
+  text-align: center;
+}
+main {
+  padding: 0 30px;
+  width: 100%;
+}
+.page {
+  width: 100%;
+  position: relative;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+}
+.main90 {
+  font-size: 90px;
+}
+.main70 {
+  font-size: 70px;
+}
+.main60 {
+  font-size: 60px;
+}
+.fixedtext {
+  position: absolute;
+  bottom: 30px;
+  display: none;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.background {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: linear-gradient(#4f814f, rgb(22, 22, 22));
+  z-index: -1;
+}
+.progressbar {
+  width: 300px;
+  position: absolute;
+  top: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 8px;
+}
+button {
+  border: none;
+  padding: 10px 16px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  font-family: "Trebuchet MS";
+  color: #fff;
+  background: #80c980;
+}
+.social {
+  border-radius: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background: rgb(22, 22, 22);
+  padding: 12px;
+}
+.social button {
+  margin: 10px;
+}
+@media (max-width: 500px) {
+  .main70,
+  .main60 {
+    font-size: 50px;
+  }
+}
+@media (max-width: 460px) {
+  h1,
+  h2 {
+    font-size: 40px;
+  }
+}
+@media (max-width: 390px) {
+  h1,
+  h2 {
+    font-size: 30px;
+  }
+  .progressbar {
+    width: 100%;
+  }
+}
+@media (max-height: 840px) and (max-width: 750px) {
+  .fixedtext {
+    text-align: center;
+    position: static;
+    width: 100%;
+    transform: none;
+  }
+  .page {
+    justify-content: space-between;
+  }
+}
